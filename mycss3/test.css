@@ -1,0 +1,207 @@
+body {
+    font-size: 16px;
+    color: #000;
+    background-size: cover;
+}
+
+.btn {
+    padding: .3em .8em;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: #58a linear-gradient(hsla(0, 0%, 100%, .2),
+    transparent);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+}
+
+.cancel {
+    background-color: #53a653;
+}
+
+.container {
+    margin: 20px;
+}
+
+.div1 {
+    /*---------------多重边框--------------*/
+    width: 10px;
+    height: 5px;
+    margin: 100px;
+    background: #ffffff;
+    box-shadow: 0 0 0 5px #dd9f1c,
+    0 0 0 10px #fff,
+    0 0 0 15px #dd9f1c,
+    0 0 0 20px #fff,
+    0 0 0 25px #dd9f1c,
+    0 0 0 30px #fff,
+    0 0 0 35px #dd9f1c,
+    0 0 0 40px #fff,
+    0 0 0 45px #dd9f1c;
+}
+
+.div2 {
+    /*----------------虚线描边------------*/
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    background: #dd9f1c;
+    border-radius: 5px;
+    outline: 2px dashed #ffffff;
+    outline-offset: -15px;
+}
+
+.div3 {
+    /*---------------背景图片定位----------*/
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background: #dd9f1c url("icecream-12.png") no-repeat bottom right;
+    background-position: right 10px bottom 10px;
+    /*background-position: calc(100% - 20px) calc(100% - 10px); !*使用函数定位*!*/
+    /*background-origin: content-box;*/
+}
+
+.div4 {
+    /*------------渐变：水平条纹背景------------*/
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 30px;
+}
+
+.div5 {
+    /*---------渐变：竖直条纹背景------------*/
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    background: linear-gradient(to right, pink 33.3%, #fb3 0, #fb3 66.6%, #77a6a3 0);
+    background-size: 50px 100%;
+}
+
+.div6 {
+    /*---------渐变：斜条纹背景------------*/
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    /*background: linear-gradient(45deg, #58a 25%, #fb3 0 ,#fb3 50%,#58a 0,#58a 75% ,#fb3 0);*/
+    /*background-size: 30px 30px;*/
+    background: repeating-linear-gradient(60deg, #58a, #58a 15px, #fb3 0, #fb3 30px);
+}
+
+.div7 {
+    /*---------渐变：桌布背景-------*/
+    width: 255px;
+    height: 135px;
+    margin: 50px;
+    background: white;
+    background-image: linear-gradient(90deg,
+    rgba(200, 0, 0, 0.5) 50%, transparent 0),
+    linear-gradient(
+            rgba(200, 0, 0, 0.5) 50%, transparent 0);
+    background-size: 30px 30px;
+}
+
+.div8 {
+    /*----------渐变：波点背景---------*/
+    width: 240px;
+    height: 120px;
+    margin: 50px;
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0);
+    background-size: 30px 30px;
+}
+
+.div9 {
+    /*----------切角-----------*/
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+    background: #58a linear-gradient(-45deg, #fff 15px, #58a 0);
+}
+
+.div10 .span1 {
+    /*----------向右箭头-----------*/
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-left: 20px solid red;
+}
+
+.div10 .span2 {
+    /*----------向左箭头-----------*/
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-right: 20px solid red;
+}
+
+.div10 .span3 {
+    /*----------向上箭头-----------*/
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid red;
+}
+
+.div10 .span4 {
+    /*----------向下箭头-----------*/
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid red;
+}
+
+.div10 .span5 {
+    /*----------左下箭头-----------*/
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-top: 20px solid red;
+    border-right: 20px solid transparent;
+}
+
+.div10 .span6 {
+    /*----------左上箭头-----------*/
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-bottom: 20px solid red;
+    border-right: 20px solid transparent;
+}
+.div11 {
+    /*----------气泡对话框-----------*/
+    width: 120px;
+    height: 80px;
+    margin: 50px;
+    background: #58a;
+    position: relative;
+    border-radius: 10px;
+}
+.div11:before {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid #58a;
+    border-bottom: 15px solid transparent;
+}
